@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 4 Task</title>
+</head>
+<body>
+    <h1> CLASS 04 ASSIGNMENT</h1>
+    <marquee> AI and CHATBOT Class 4 ASSIGNMENT by Muhammad AbuBakar Ansari</marquee>
+    <label>Table No:- </label> 
+    <input type="number" id="Tnum" placeholder="Enter Table Number">
+    <br>
+    <label>Table Till:- </label> 
+    <input type="number" id="TT" placeholder="Enter Table Till" >
+    <br>
+    <button onclick="printTable()">ENTER</button>
+    <p> 
+        <b> FOR LOOP:- </b> 
+        <br> 
+    <i> For loop is a programming language conditional iterative statement which is used to check for 
+        certain conditions and then repeatedly execute a block of code as long as those conditions are met.
+
+        The for loop is distinguished from other looping statements through an explicit loop counter 
+        or loop variable which allows the body of the loop to know the exact sequencing of each iteration.</i>
+        <br>
+        <br>
+        <b> WHY WE USE FOR LOOP? </b> 
+        <br> 
+        Loops make code more manageable and organized. As we learn more about programming and writing complex programs, 
+        loops will be an important element to understand and use.
+        <br>
+        <br>
+        <b> FUNCTION OF PROGRAM:- </b> 
+        <br>
+        In this program, We create a user table program in which user input the Number of table and till 
+        at the number user input. <br>
+        like:- if user input the number of table 2 and they till 1000 so we get the output like:
+        <br>
+        2 x 1 = 2 <br>
+        2 x 2 = 4 <br>
+        2 x 3 = 6 <br>
+        ......... <br>
+        ......... <br>
+        2 x 999 = 1998 <br>
+        2 x 1000 = 2000 <br>
+
+    </p>
+    
+    <h1>TABLE</h1>
+    <p id="result"></p>
+
+    <script>
+
+           
+        function printTable() {
+            var num = Number(document.getElementById("Tnum").value);
+            var numT = Number(document.getElementById("TT").value);
+            var output = (document.getElementById("result"));
+            
+            for(var i=1;i<=numT;i++) {
+
+		        output.innerHTML += num+ " x "+i+ " = " + num * i + "<br/>";
+                
+		}
+        
+        }
+
+
+        	
+    </script>
+</body>
+</html>
